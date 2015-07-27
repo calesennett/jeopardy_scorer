@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0411F48E1B65C60E00A48F01 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411F48D1B65C60E00A48F01 /* Answer.swift */; };
+		04167DAD1B65B833007548DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04167DAC1B65B833007548DF /* AppDelegate.swift */; };
+		04167DAF1B65B833007548DF /* SingleJeopardy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04167DAE1B65B833007548DF /* SingleJeopardy.swift */; };
+		04167DB21B65B833007548DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04167DB01B65B833007548DF /* Main.storyboard */; };
+		04167DB41B65B833007548DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04167DB31B65B833007548DF /* Images.xcassets */; };
+		04167DB71B65B833007548DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04167DB51B65B833007548DF /* LaunchScreen.xib */; };
+		04167DC31B65B833007548DF /* JeopardyScorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04167DC21B65B833007548DF /* JeopardyScorerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04167DBD1B65B833007548DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04167D9F1B65B833007548DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04167DA61B65B833007548DF;
+			remoteInfo = JeopardyScorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0411F48D1B65C60E00A48F01 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		04167DA71B65B833007548DF /* JeopardyScorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeopardyScorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04167DAB1B65B833007548DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04167DAC1B65B833007548DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04167DAE1B65B833007548DF /* SingleJeopardy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleJeopardy.swift; sourceTree = "<group>"; };
+		04167DB11B65B833007548DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04167DB31B65B833007548DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04167DB61B65B833007548DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		04167DBC1B65B833007548DF /* JeopardyScorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeopardyScorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04167DC11B65B833007548DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04167DC21B65B833007548DF /* JeopardyScorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeopardyScorerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04167DA41B65B833007548DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04167DB91B65B833007548DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04167D9E1B65B833007548DF = {
+			isa = PBXGroup;
+			children = (
+				04167DA91B65B833007548DF /* JeopardyScorer */,
+				04167DBF1B65B833007548DF /* JeopardyScorerTests */,
+				04167DA81B65B833007548DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04167DA81B65B833007548DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04167DA71B65B833007548DF /* JeopardyScorer.app */,
+				04167DBC1B65B833007548DF /* JeopardyScorerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04167DA91B65B833007548DF /* JeopardyScorer */ = {
+			isa = PBXGroup;
+			children = (
+				04167DAC1B65B833007548DF /* AppDelegate.swift */,
+				0411F48D1B65C60E00A48F01 /* Answer.swift */,
+				04167DAE1B65B833007548DF /* SingleJeopardy.swift */,
+				04167DB01B65B833007548DF /* Main.storyboard */,
+				04167DB31B65B833007548DF /* Images.xcassets */,
+				04167DB51B65B833007548DF /* LaunchScreen.xib */,
+				04167DAA1B65B833007548DF /* Supporting Files */,
+			);
+			path = JeopardyScorer;
+			sourceTree = "<group>";
+		};
+		04167DAA1B65B833007548DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04167DAB1B65B833007548DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04167DBF1B65B833007548DF /* JeopardyScorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				04167DC21B65B833007548DF /* JeopardyScorerTests.swift */,
+				04167DC01B65B833007548DF /* Supporting Files */,
+			);
+			path = JeopardyScorerTests;
+			sourceTree = "<group>";
+		};
+		04167DC01B65B833007548DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04167DC11B65B833007548DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04167DA61B65B833007548DF /* JeopardyScorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04167DC61B65B833007548DF /* Build configuration list for PBXNativeTarget "JeopardyScorer" */;
+			buildPhases = (
+				04167DA31B65B833007548DF /* Sources */,
+				04167DA41B65B833007548DF /* Frameworks */,
+				04167DA51B65B833007548DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JeopardyScorer;
+			productName = JeopardyScorer;
+			productReference = 04167DA71B65B833007548DF /* JeopardyScorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04167DBB1B65B833007548DF /* JeopardyScorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04167DC91B65B833007548DF /* Build configuration list for PBXNativeTarget "JeopardyScorerTests" */;
+			buildPhases = (
+				04167DB81B65B833007548DF /* Sources */,
+				04167DB91B65B833007548DF /* Frameworks */,
+				04167DBA1B65B833007548DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04167DBE1B65B833007548DF /* PBXTargetDependency */,
+			);
+			name = JeopardyScorerTests;
+			productName = JeopardyScorerTests;
+			productReference = 04167DBC1B65B833007548DF /* JeopardyScorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04167D9F1B65B833007548DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Cale Sennett";
+				TargetAttributes = {
+					04167DA61B65B833007548DF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					04167DBB1B65B833007548DF = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 04167DA61B65B833007548DF;
+					};
+				};
+			};
+			buildConfigurationList = 04167DA21B65B833007548DF /* Build configuration list for PBXProject "JeopardyScorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04167D9E1B65B833007548DF;
+			productRefGroup = 04167DA81B65B833007548DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04167DA61B65B833007548DF /* JeopardyScorer */,
+				04167DBB1B65B833007548DF /* JeopardyScorerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04167DA51B65B833007548DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04167DB21B65B833007548DF /* Main.storyboard in Resources */,
+				04167DB71B65B833007548DF /* LaunchScreen.xib in Resources */,
+				04167DB41B65B833007548DF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04167DBA1B65B833007548DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04167DA31B65B833007548DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0411F48E1B65C60E00A48F01 /* Answer.swift in Sources */,
+				04167DAF1B65B833007548DF /* SingleJeopardy.swift in Sources */,
+				04167DAD1B65B833007548DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04167DB81B65B833007548DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04167DC31B65B833007548DF /* JeopardyScorerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04167DBE1B65B833007548DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04167DA61B65B833007548DF /* JeopardyScorer */;
+			targetProxy = 04167DBD1B65B833007548DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04167DB01B65B833007548DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04167DB11B65B833007548DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04167DB51B65B833007548DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04167DB61B65B833007548DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04167DC41B65B833007548DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04167DC51B65B833007548DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04167DC71B65B833007548DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JeopardyScorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04167DC81B65B833007548DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JeopardyScorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04167DCA1B65B833007548DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JeopardyScorerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JeopardyScorer.app/JeopardyScorer";
+			};
+			name = Debug;
+		};
+		04167DCB1B65B833007548DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JeopardyScorerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JeopardyScorer.app/JeopardyScorer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04167DA21B65B833007548DF /* Build configuration list for PBXProject "JeopardyScorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04167DC41B65B833007548DF /* Debug */,
+				04167DC51B65B833007548DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04167DC61B65B833007548DF /* Build configuration list for PBXNativeTarget "JeopardyScorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04167DC71B65B833007548DF /* Debug */,
+				04167DC81B65B833007548DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04167DC91B65B833007548DF /* Build configuration list for PBXNativeTarget "JeopardyScorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04167DCA1B65B833007548DF /* Debug */,
+				04167DCB1B65B833007548DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04167D9F1B65B833007548DF /* Project object */;
+}
