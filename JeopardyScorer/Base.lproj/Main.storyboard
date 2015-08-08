@@ -218,7 +218,6 @@
                                 </state>
                                 <connections>
                                     <action selector="correctAnswerButtonDidPress:" destination="SFF-NS-u1h" eventType="touchUpInside" id="rNm-AT-OaW"/>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="Z4y-K7-8qJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D4H-6Z-NkX">
@@ -233,7 +232,6 @@
                                 </state>
                                 <connections>
                                     <action selector="incorrectAnswerButtonDidPress:" destination="SFF-NS-u1h" eventType="touchUpInside" id="8QD-g4-2e4"/>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="H0A-Xi-iuM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gv8-vp-uzK">
@@ -247,7 +245,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="kkC-Wh-BrT"/>
+                                    <action selector="didNotAnswerButtonDidPress:" destination="SFF-NS-u1h" eventType="touchUpInside" id="fNJ-6R-rKd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NIn-os-b8g">
@@ -282,9 +280,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="amountButton" destination="wTa-Is-zHz" id="6bg-Dd-Zmc"/>
+                        <outlet property="correctAnswerButton" destination="Pvq-BW-Brg" id="kvu-cu-Fhj"/>
                         <outlet property="didNotAnswerButton" destination="gv8-vp-uzK" id="zjW-D0-f9D"/>
                         <outlet property="incorrectAnswerButton" destination="D4H-6Z-NkX" id="b4c-82-YjM"/>
                         <outlet property="totalLabel" destination="z73-Ta-4I9" id="qJy-bU-PHH"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="answerToQuestion" id="3ei-hj-ePC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyw-Lb-mXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,7 +297,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="kkC-Wh-BrT"/>
-    </inferredMetricsTieBreakers>
 </document>
