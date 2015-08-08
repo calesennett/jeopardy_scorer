@@ -21,13 +21,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cDo-EF-RBN">
-                                <rect key="frame" x="170" y="88" width="28" height="58"/>
+                                <rect key="frame" x="170" y="88" width="205" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="44"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xl7-Ke-fZD">
+                                <rect key="frame" x="0.0" y="379" width="375" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.81176470590000005" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <state key="normal" title="CORRECT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="08C-w6-PdP">
+                                <rect key="frame" x="0.0" y="475" width="375" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.26274509800000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <state key="normal" title="INCORRECT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZOO-T3-9lB">
+                                <rect key="frame" x="0.0" y="571" width="375" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <state key="normal" title="DIDN'T ANSWER">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FcI-Y7-4Aa">
                                 <rect key="frame" x="0.0" y="571" width="380" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -140,14 +173,18 @@
                     <navigationItem key="navigationItem" id="dF7-V6-4cL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="correctButton" destination="xl7-Ke-fZD" id="7HI-qE-2Fj"/>
+                        <outlet property="didNotAnswerButton" destination="ZOO-T3-9lB" id="Tjf-Vn-Zqu"/>
+                        <outlet property="incorrectButton" destination="08C-w6-PdP" id="5O4-ZG-frR"/>
                         <outlet property="questionAmountButton" destination="BeP-tk-daT" id="i24-2I-yS8"/>
                         <outlet property="singleJeopardyUIView" destination="kh9-bI-dsS" id="1UO-G3-GBK"/>
                         <outlet property="totalLabel" destination="cDo-EF-RBN" id="WKv-rp-s8g"/>
+                        <segue destination="SFF-NS-u1h" kind="modal" identifier="questionToAnswer" animates="NO" id="fHF-AS-y18"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180.5" y="367.5"/>
+            <point key="canvasLocation" x="268.5" y="366.5"/>
         </scene>
         <!--Answer-->
         <scene sceneID="DhU-3D-gHF">
@@ -158,11 +195,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wTa-Is-zHz">
-                                <rect key="frame" x="0.0" y="182" width="375" height="197"/>
+                                <rect key="frame" x="0.0" y="183" width="380" height="485"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-280" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="$200">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -179,6 +217,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="correctAnswerButtonDidPress:" destination="SFF-NS-u1h" eventType="touchUpInside" id="rNm-AT-OaW"/>
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="Z4y-K7-8qJ"/>
                                 </connections>
                             </button>
@@ -193,6 +232,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="incorrectAnswerButtonDidPress:" destination="SFF-NS-u1h" eventType="touchUpInside" id="8QD-g4-2e4"/>
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="H0A-Xi-iuM"/>
                                 </connections>
                             </button>
@@ -211,15 +251,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NIn-os-b8g">
-                                <rect key="frame" x="153" y="44" width="74" height="33"/>
+                                <rect key="frame" x="153" y="47" width="74" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bjt-Bd-Kwb">
-                                <rect key="frame" x="133" y="85" width="109" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bjt-Bd-Kwb">
+                                <rect key="frame" x="133" y="88" width="29" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z73-Ta-4I9">
+                                <rect key="frame" x="170" y="88" width="205" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="44"/>
@@ -232,10 +280,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="aJ5-GA-n3k"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="amountButton" destination="wTa-Is-zHz" id="6bg-Dd-Zmc"/>
+                        <outlet property="didNotAnswerButton" destination="gv8-vp-uzK" id="zjW-D0-f9D"/>
+                        <outlet property="incorrectAnswerButton" destination="D4H-6Z-NkX" id="b4c-82-YjM"/>
+                        <outlet property="totalLabel" destination="z73-Ta-4I9" id="qJy-bU-PHH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyw-Lb-mXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624.5" y="367.5"/>
+            <point key="canvasLocation" x="869.5" y="366.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
