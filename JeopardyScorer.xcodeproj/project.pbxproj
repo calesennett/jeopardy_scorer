@@ -14,6 +14,7 @@
 		04167DB41B65B833007548DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04167DB31B65B833007548DF /* Images.xcassets */; };
 		04167DB71B65B833007548DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04167DB51B65B833007548DF /* LaunchScreen.xib */; };
 		04167DC31B65B833007548DF /* JeopardyScorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04167DC21B65B833007548DF /* JeopardyScorerTests.swift */; };
+		1470F989555A0267CB197870 /* Pods_JeopardyScorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72923EDEE6027D9F1E5612B8 /* Pods_JeopardyScorer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		04167DBC1B65B833007548DF /* JeopardyScorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeopardyScorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04167DC11B65B833007548DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04167DC21B65B833007548DF /* JeopardyScorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeopardyScorerTests.swift; sourceTree = "<group>"; };
+		65C6DAB989DB433023480F9A /* Pods-JeopardyScorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeopardyScorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer.release.xcconfig"; sourceTree = "<group>"; };
+		72923EDEE6027D9F1E5612B8 /* Pods_JeopardyScorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeopardyScorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E0CD29357F002924F5A5AE /* Pods-JeopardyScorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeopardyScorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1470F989555A0267CB197870 /* Pods_JeopardyScorer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 				04167DA91B65B833007548DF /* JeopardyScorer */,
 				04167DBF1B65B833007548DF /* JeopardyScorerTests */,
 				04167DA81B65B833007548DF /* Products */,
+				44E4F7EED124DC45B5E207FF /* Pods */,
+				C1402475DBFD15E29AF8E7FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +122,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		44E4F7EED124DC45B5E207FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0E0CD29357F002924F5A5AE /* Pods-JeopardyScorer.debug.xcconfig */,
+				65C6DAB989DB433023480F9A /* Pods-JeopardyScorer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1402475DBFD15E29AF8E7FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72923EDEE6027D9F1E5612B8 /* Pods_JeopardyScorer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04167DC61B65B833007548DF /* Build configuration list for PBXNativeTarget "JeopardyScorer" */;
 			buildPhases = (
+				C22ECF4B0B97325868546EE4 /* Check Pods Manifest.lock */,
 				04167DA31B65B833007548DF /* Sources */,
 				04167DA41B65B833007548DF /* Frameworks */,
 				04167DA51B65B833007548DF /* Resources */,
+				7603DC3A4B11213BB03837D0 /* Embed Pods Frameworks */,
+				0E789063AE542288FF833F6D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +236,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E789063AE542288FF833F6D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7603DC3A4B11213BB03837D0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C22ECF4B0B97325868546EE4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04167DA31B65B833007548DF /* Sources */ = {
@@ -342,6 +417,7 @@
 		};
 		04167DC71B65B833007548DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0E0CD29357F002924F5A5AE /* Pods-JeopardyScorer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JeopardyScorer/Info.plist;
@@ -352,6 +428,7 @@
 		};
 		04167DC81B65B833007548DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C6DAB989DB433023480F9A /* Pods-JeopardyScorer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JeopardyScorer/Info.plist;
