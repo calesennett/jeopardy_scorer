@@ -184,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268.5" y="366.5"/>
+            <point key="canvasLocation" x="268.5" y="366.49999999999994"/>
         </scene>
         <!--Answer-->
         <scene sceneID="DhU-3D-gHF">
@@ -280,16 +280,17 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="amountButton" destination="wTa-Is-zHz" id="6bg-Dd-Zmc"/>
+                        <outlet property="answerUIView" destination="QNM-jE-aX1" id="95Z-gE-QY4"/>
                         <outlet property="correctAnswerButton" destination="Pvq-BW-Brg" id="kvu-cu-Fhj"/>
                         <outlet property="didNotAnswerButton" destination="gv8-vp-uzK" id="zjW-D0-f9D"/>
                         <outlet property="incorrectAnswerButton" destination="D4H-6Z-NkX" id="b4c-82-YjM"/>
                         <outlet property="totalLabel" destination="z73-Ta-4I9" id="qJy-bU-PHH"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="answerToQuestion" id="3ei-hj-ePC"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="answerToQuestion" animates="NO" id="3ei-hj-ePC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyw-Lb-mXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869.5" y="366.5"/>
+            <point key="canvasLocation" x="869.5" y="366.49999999999994"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -13,6 +13,7 @@ class Answer: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var amountButton: UIButton!
     
+    @IBOutlet var answerUIView: UIView!
     @IBOutlet weak var correctAnswerButton: UIButton!
     @IBOutlet weak var incorrectAnswerButton: UIButton!
     @IBOutlet weak var didNotAnswerButton: UIButton!
@@ -62,14 +63,6 @@ class Answer: UIViewController {
         animateAnswerButtons()
     }
     
-    private func animateAnswerButtons() {
-        springWithCompletion(0.4, {
-            self.hideAnswerButtons()
-        }, { finished in
-            self.performSegueWithIdentifier("answerToQuestion", sender: self)
-        })
-    }
-    
     private func hideAnswerButtons() {
         springWithDelay(0.4, 0.05, {
             self.didNotAnswerButton.transform = CGAffineTransformMakeTranslation(0, 300)
@@ -81,6 +74,18 @@ class Answer: UIViewController {
             self.correctAnswerButton.transform = CGAffineTransformMakeTranslation(0, 300)
         })
     }
+    
+    private func animateAnswerButtons() {
+        springWithCompletion(0.4, {
+            self.hideAnswerButtons()
+            self.didNotAnswerButton.alpha = 0.95
+            self.incorrectAnswerButton.alpha = 0.95
+            self.correctAnswerButton.alpha = 0.95
+        }, { finished in
+            self.performSegueWithIdentifier("answerToQuestion", sender: self)
+        })
+    }
+    
     
     private func setTotalLabel() {
         if let total = defaults.objectForKey(TOTAL_KEY) as? Int {
