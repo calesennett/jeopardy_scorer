@@ -12,16 +12,18 @@ import Spring
 class SingleJeopardy: UIViewController {
     @IBOutlet var singleJeopardyUIView: UIView!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var questionAmountButton: UIButton!
+    @IBOutlet var questionAmountButtons: [UIButton]!
     @IBOutlet weak var correctButton: UIButton!
     @IBOutlet weak var incorrectButton: UIButton!
     @IBOutlet weak var dailyDoubleButton: UIButton!
+    @IBOutlet weak var doubleJeopardyButton: UIButton!
     @IBOutlet weak var didNotAnswerButton: UIButton!
     @IBOutlet weak var wagerUIView: UIView!
     @IBOutlet weak var wagerTextField: UITextField!
     
     let defaults = NSUserDefaults.standardUserDefaults()
     let TOTAL_KEY = "total"
+    let DOUBLE_JEOPARDY_ENABLED = "double_jeopardy_enabled"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,7 @@ class SingleJeopardy: UIViewController {
         hideAnswerButtons()
         hideWagerView()
         drawTextFieldBorderBottom()
+        updateQuestionAmounts()
     }
     
     @IBAction func questionAmountButtonPressed(sender: UIButton) {
@@ -44,6 +47,12 @@ class SingleJeopardy: UIViewController {
         })
     }
     
+    @IBAction func doubleJeopardyButtonDidPress(sender: UIButton) {
+        let doubleJeopardyEnabled = defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED)
+        defaults.setBool(!doubleJeopardyEnabled, forKey: DOUBLE_JEOPARDY_ENABLED)
+        updateQuestionAmounts()
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "questionToAnswer" {
             let toView = segue.destinationViewController as! Answer
@@ -55,6 +64,24 @@ class SingleJeopardy: UIViewController {
     
     private func hideWagerView() {
         wagerUIView.transform = CGAffineTransformMakeTranslation(500, 0)
+    }
+    
+    private func updateQuestionAmounts() {
+        if defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED) {
+            var amount = 200
+            
+            for (idx, btn) in enumerate(questionAmountButtons) {
+                let questionAmount = amount * (idx + 1)
+                btn.setTitle("$\(questionAmount)", forState: UIControlState.Normal)
+            }
+        } else {
+            var amount = 400
+            
+            for (idx, btn) in enumerate(questionAmountButtons) {
+                let questionAmount = amount * (idx + 1)
+                btn.setTitle("$\(questionAmount)", forState: UIControlState.Normal)
+            }
+        }
     }
     
     private func drawTextFieldBorderBottom() {

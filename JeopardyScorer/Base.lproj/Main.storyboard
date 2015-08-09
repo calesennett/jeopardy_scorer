@@ -191,6 +191,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doubleJeopardyButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1K9-hK-nw3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KnB-mL-JkL">
                                 <rect key="frame" x="217" y="36" width="142" height="36"/>
@@ -257,11 +260,17 @@
                         <outlet property="correctButton" destination="xl7-Ke-fZD" id="7HI-qE-2Fj"/>
                         <outlet property="dailyDoubleButton" destination="KnB-mL-JkL" id="kOl-wN-sRc"/>
                         <outlet property="didNotAnswerButton" destination="ZOO-T3-9lB" id="Tjf-Vn-Zqu"/>
+                        <outlet property="doubleJeopardyButton" destination="Hgh-Lv-tuV" id="orf-v2-c2l"/>
                         <outlet property="incorrectButton" destination="08C-w6-PdP" id="5O4-ZG-frR"/>
                         <outlet property="singleJeopardyUIView" destination="kh9-bI-dsS" id="1UO-G3-GBK"/>
                         <outlet property="totalLabel" destination="cDo-EF-RBN" id="WKv-rp-s8g"/>
                         <outlet property="wagerTextField" destination="Iff-4I-D6J" id="xbG-1p-Yjp"/>
                         <outlet property="wagerUIView" destination="OIe-U7-PMU" id="qtm-Hf-XGT"/>
+                        <outletCollection property="questionAmountButtons" destination="jRS-Xv-h1U" collectionClass="NSMutableArray" id="VKK-By-VlK"/>
+                        <outletCollection property="questionAmountButtons" destination="BeP-tk-daT" collectionClass="NSMutableArray" id="EDM-I5-wao"/>
+                        <outletCollection property="questionAmountButtons" destination="QnF-o3-m8R" collectionClass="NSMutableArray" id="Oc1-hy-lVA"/>
+                        <outletCollection property="questionAmountButtons" destination="A5c-NA-klf" collectionClass="NSMutableArray" id="g2I-Bm-KMl"/>
+                        <outletCollection property="questionAmountButtons" destination="FcI-Y7-4Aa" collectionClass="NSMutableArray" id="m4q-bI-V2I"/>
                         <segue destination="SFF-NS-u1h" kind="modal" identifier="questionToAnswer" animates="NO" id="fHF-AS-y18"/>
                         <segue destination="WQg-U9-7ET" kind="modal" identifier="questionToDailyDouble" animates="NO" id="m7i-gZ-2DH"/>
                     </connections>
@@ -523,7 +532,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lyU-Em-k0H"/>
         <segue reference="EhU-qC-0hd"/>
+        <segue reference="m7i-gZ-2DH"/>
     </inferredMetricsTieBreakers>
 </document>
