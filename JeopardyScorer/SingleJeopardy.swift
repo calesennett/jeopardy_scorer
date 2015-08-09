@@ -67,7 +67,7 @@ class SingleJeopardy: UIViewController {
     }
     
     private func updateQuestionAmounts() {
-        if defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED) {
+        if defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED) == false {
             var amount = 200
             
             for (idx, btn) in enumerate(questionAmountButtons) {
