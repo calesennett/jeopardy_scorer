@@ -15,6 +15,7 @@
 		04167DB71B65B833007548DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04167DB51B65B833007548DF /* LaunchScreen.xib */; };
 		04167DC31B65B833007548DF /* JeopardyScorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04167DC21B65B833007548DF /* JeopardyScorerTests.swift */; };
 		045EBBB91B76C71D0006D947 /* DailyDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EBBB81B76C71D0006D947 /* DailyDouble.swift */; };
+		04A4BEF51B77E96000BE7668 /* Final.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4BEF41B77E96000BE7668 /* Final.swift */; };
 		1470F989555A0267CB197870 /* Pods_JeopardyScorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72923EDEE6027D9F1E5612B8 /* Pods_JeopardyScorer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		04167DC11B65B833007548DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04167DC21B65B833007548DF /* JeopardyScorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeopardyScorerTests.swift; sourceTree = "<group>"; };
 		045EBBB81B76C71D0006D947 /* DailyDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyDouble.swift; path = JeopardyScorer/DailyDouble.swift; sourceTree = "<group>"; };
+		04A4BEF41B77E96000BE7668 /* Final.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Final.swift; path = JeopardyScorer/Final.swift; sourceTree = "<group>"; };
 		65C6DAB989DB433023480F9A /* Pods-JeopardyScorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeopardyScorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer.release.xcconfig"; sourceTree = "<group>"; };
 		72923EDEE6027D9F1E5612B8 /* Pods_JeopardyScorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeopardyScorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E0CD29357F002924F5A5AE /* Pods-JeopardyScorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeopardyScorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		04167D9E1B65B833007548DF = {
 			isa = PBXGroup;
 			children = (
+				04A4BEF41B77E96000BE7668 /* Final.swift */,
 				045EBBB81B76C71D0006D947 /* DailyDouble.swift */,
 				04167DA91B65B833007548DF /* JeopardyScorer */,
 				04167DBF1B65B833007548DF /* JeopardyScorerTests */,
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A4BEF51B77E96000BE7668 /* Final.swift in Sources */,
 				045EBBB91B76C71D0006D947 /* DailyDouble.swift in Sources */,
 				0411F48E1B65C60E00A48F01 /* Answer.swift in Sources */,
 				04167DAF1B65B833007548DF /* SingleJeopardy.swift in Sources */,

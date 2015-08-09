@@ -227,6 +227,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finalJeopardyButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yYL-cR-N52"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cDo-EF-RBN">
                                 <rect key="frame" x="68" y="88" width="147" height="58"/>
@@ -261,6 +264,7 @@
                         <outlet property="dailyDoubleButton" destination="KnB-mL-JkL" id="kOl-wN-sRc"/>
                         <outlet property="didNotAnswerButton" destination="ZOO-T3-9lB" id="Tjf-Vn-Zqu"/>
                         <outlet property="doubleJeopardyButton" destination="Hgh-Lv-tuV" id="orf-v2-c2l"/>
+                        <outlet property="finalJeopardyButton" destination="vLQ-hA-HUf" id="UwX-c2-Nvl"/>
                         <outlet property="incorrectButton" destination="08C-w6-PdP" id="5O4-ZG-frR"/>
                         <outlet property="singleJeopardyUIView" destination="kh9-bI-dsS" id="1UO-G3-GBK"/>
                         <outlet property="totalLabel" destination="cDo-EF-RBN" id="WKv-rp-s8g"/>
@@ -519,11 +523,73 @@
                         <outlet property="totalLabel" destination="F4l-Pq-FAi" id="SuQ-qu-qbG"/>
                         <outlet property="wagerTextField" destination="Qdf-op-CUv" id="e8i-qM-mTa"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="dailyDoubleToQuestion" id="EhU-qC-0hd"/>
+                        <segue destination="Weg-xM-3yp" kind="modal" identifier="finalJeopardyToFinalScreen" id="SR4-64-ZXt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rZ-yf-S5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="505.5" y="1183.5"/>
+        </scene>
+        <!--Final-->
+        <scene sceneID="SJ1-hC-uyb">
+            <objects>
+                <viewController id="Weg-xM-3yp" customClass="Final" customModule="JeopardyScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ryn-iI-HYW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C95-Bi-Sd5">
+                                <rect key="frame" x="0.0" y="360" width="375" height="307"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <state key="normal" title="PLAY AGAIN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgainButtonDidPress:" destination="Weg-xM-3yp" eventType="touchUpInside" id="Sc5-ka-rKq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mk9-wC-gPy">
+                                <rect key="frame" x="38" y="47" width="74" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GTm-FO-keP">
+                                <rect key="frame" x="31" y="88" width="29" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Og6-Ng-Lj3">
+                                <rect key="frame" x="68" y="88" width="147" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="playAgainButton" destination="C95-Bi-Sd5" id="vRI-h9-Hhf"/>
+                        <outlet property="totalLabel" destination="Og6-Ng-Lj3" id="xXh-N4-drH"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="finalScreenToQuestion" id="vDB-ke-6OY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9f-EC-1k5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946.5" y="1183.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -532,7 +598,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EhU-qC-0hd"/>
         <segue reference="m7i-gZ-2DH"/>
+        <segue reference="vDB-ke-6OY"/>
     </inferredMetricsTieBreakers>
 </document>
