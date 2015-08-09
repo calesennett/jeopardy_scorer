@@ -227,6 +227,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finalJeopardyButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yYL-cR-N52"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cDo-EF-RBN">
                                 <rect key="frame" x="68" y="88" width="147" height="58"/>
@@ -261,6 +264,7 @@
                         <outlet property="dailyDoubleButton" destination="KnB-mL-JkL" id="kOl-wN-sRc"/>
                         <outlet property="didNotAnswerButton" destination="ZOO-T3-9lB" id="Tjf-Vn-Zqu"/>
                         <outlet property="doubleJeopardyButton" destination="Hgh-Lv-tuV" id="orf-v2-c2l"/>
+                        <outlet property="finalJeopardyButton" destination="vLQ-hA-HUf" id="UwX-c2-Nvl"/>
                         <outlet property="incorrectButton" destination="08C-w6-PdP" id="5O4-ZG-frR"/>
                         <outlet property="singleJeopardyUIView" destination="kh9-bI-dsS" id="1UO-G3-GBK"/>
                         <outlet property="totalLabel" destination="cDo-EF-RBN" id="WKv-rp-s8g"/>
@@ -273,6 +277,7 @@
                         <outletCollection property="questionAmountButtons" destination="FcI-Y7-4Aa" collectionClass="NSMutableArray" id="m4q-bI-V2I"/>
                         <segue destination="SFF-NS-u1h" kind="modal" identifier="questionToAnswer" animates="NO" id="fHF-AS-y18"/>
                         <segue destination="WQg-U9-7ET" kind="modal" identifier="questionToDailyDouble" animates="NO" id="m7i-gZ-2DH"/>
+                        <segue destination="Weg-xM-3yp" kind="modal" identifier="questionToFinalScreen" id="eiS-vT-o40"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -525,6 +530,22 @@
             </objects>
             <point key="canvasLocation" x="505.5" y="1183.5"/>
         </scene>
+        <!--Final-->
+        <scene sceneID="SJ1-hC-uyb">
+            <objects>
+                <viewController id="Weg-xM-3yp" customClass="Final" customModule="JeopardyScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ryn-iI-HYW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9f-EC-1k5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946.5" y="1183.5"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -532,7 +553,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EhU-qC-0hd"/>
         <segue reference="m7i-gZ-2DH"/>
+        <segue reference="EhU-qC-0hd"/>
     </inferredMetricsTieBreakers>
 </document>

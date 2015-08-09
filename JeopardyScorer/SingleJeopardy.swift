@@ -20,10 +20,12 @@ class SingleJeopardy: UIViewController {
     @IBOutlet weak var didNotAnswerButton: UIButton!
     @IBOutlet weak var wagerUIView: UIView!
     @IBOutlet weak var wagerTextField: UITextField!
+    @IBOutlet weak var finalJeopardyButton: UIButton!
     
     let defaults = NSUserDefaults.standardUserDefaults()
     let TOTAL_KEY = "total"
     let DOUBLE_JEOPARDY_ENABLED = "double_jeopardy_enabled"
+    let FINAL_JEOPARDY = "final_jeopardy"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,16 @@ class SingleJeopardy: UIViewController {
             self.singleJeopardyUIView.bringSubviewToFront(self.wagerUIView)
         }, { finished in
             self.performSegueWithIdentifier("questionToDailyDouble", sender: self)
+        })
+    }
+    
+    @IBAction func finalJeopardyButtonDidPress(sender: UIButton) {
+        springWithCompletion(0.4, {
+            self.wagerUIView.transform = CGAffineTransformMakeTranslation(0, 0)
+            self.singleJeopardyUIView.bringSubviewToFront(self.wagerUIView)
+            }, { finished in
+                self.defaults.setBool(true, forKey: self.FINAL_JEOPARDY)
+                self.performSegueWithIdentifier("questionToDailyDouble", sender: self)
         })
     }
     

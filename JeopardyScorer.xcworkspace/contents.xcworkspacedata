@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:JeopardyScorer/Final.swift">
+   </FileRef>
+   <FileRef
       location = "group:JeopardyScorer/DailyDouble.swift">
    </FileRef>
    <FileRef
