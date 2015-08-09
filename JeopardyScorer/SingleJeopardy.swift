@@ -15,7 +15,10 @@ class SingleJeopardy: UIViewController {
     @IBOutlet weak var questionAmountButton: UIButton!
     @IBOutlet weak var correctButton: UIButton!
     @IBOutlet weak var incorrectButton: UIButton!
+    @IBOutlet weak var dailyDoubleButton: UIButton!
     @IBOutlet weak var didNotAnswerButton: UIButton!
+    @IBOutlet weak var wagerUIView: UIView!
+    @IBOutlet weak var wagerTextField: UITextField!
     
     let defaults = NSUserDefaults.standardUserDefaults()
     let TOTAL_KEY = "total"
@@ -24,10 +27,21 @@ class SingleJeopardy: UIViewController {
         super.viewDidLoad()
         setTotalLabel()
         hideAnswerButtons()
+        hideWagerView()
+        drawTextFieldBorderBottom()
     }
     
     @IBAction func questionAmountButtonPressed(sender: UIButton) {
         animateButton(sender)
+    }
+    
+    @IBAction func dailyDoubleButtonDidPress(sender: UIButton) {
+        springWithCompletion(0.4, {
+            self.wagerUIView.transform = CGAffineTransformMakeTranslation(0, 0)
+            self.singleJeopardyUIView.bringSubviewToFront(self.wagerUIView)
+        }, { finished in
+            self.performSegueWithIdentifier("questionToDailyDouble", sender: self)
+        })
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -37,6 +51,18 @@ class SingleJeopardy: UIViewController {
                 toView.amount = amount
             }
         }
+    }
+    
+    private func hideWagerView() {
+        wagerUIView.transform = CGAffineTransformMakeTranslation(500, 0)
+    }
+    
+    private func drawTextFieldBorderBottom() {
+        var bottomLine = CALayer()
+        bottomLine.frame = CGRectMake(0.0, wagerTextField.frame.height - 3, wagerTextField.frame.width, 10.0)
+        bottomLine.backgroundColor = UIColor.whiteColor().CGColor
+        wagerTextField.borderStyle = UITextBorderStyle.None
+        wagerTextField.layer.addSublayer(bottomLine)
     }
     
     private func setTotalLabel() {
