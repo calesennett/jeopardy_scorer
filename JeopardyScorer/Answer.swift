@@ -78,9 +78,9 @@ class Answer: UIViewController {
     private func animateAnswerButtons() {
         springWithCompletion(0.4, {
             self.hideAnswerButtons()
-            self.didNotAnswerButton.alpha = 0.95
-            self.incorrectAnswerButton.alpha = 0.95
-            self.correctAnswerButton.alpha = 0.95
+            self.didNotAnswerButton.alpha = 0.99
+            self.incorrectAnswerButton.alpha = 0.99
+            self.correctAnswerButton.alpha = 0.99
         }, { finished in
             self.performSegueWithIdentifier("answerToQuestion", sender: self)
         })
