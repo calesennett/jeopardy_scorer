@@ -24,8 +24,8 @@ class SingleJeopardy: UIViewController {
     
     let defaults = NSUserDefaults.standardUserDefaults()
     let TOTAL_KEY = "total"
-    let DOUBLE_JEOPARDY_ENABLED = "double_jeopardy_enabled"
-    let FINAL_JEOPARDY = "final_jeopardy"
+    let DOUBLE_JEOPARDY_ENABLED_KEY = "double_jeopardy_enabled"
+    let FINAL_JEOPARDY_ENABLED_KEY = "final_jeopardy_enabled"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,14 +54,14 @@ class SingleJeopardy: UIViewController {
             self.wagerUIView.transform = CGAffineTransformMakeTranslation(0, 0)
             self.singleJeopardyUIView.bringSubviewToFront(self.wagerUIView)
             }, { finished in
-                self.defaults.setBool(true, forKey: self.FINAL_JEOPARDY)
+                self.defaults.setBool(true, forKey: self.FINAL_JEOPARDY_ENABLED_KEY)
                 self.performSegueWithIdentifier("questionToDailyDouble", sender: self)
         })
     }
     
     @IBAction func doubleJeopardyButtonDidPress(sender: UIButton) {
-        let doubleJeopardyEnabled = defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED)
-        defaults.setBool(!doubleJeopardyEnabled, forKey: DOUBLE_JEOPARDY_ENABLED)
+        let doubleJeopardyEnabled = defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED_KEY)
+        defaults.setBool(!doubleJeopardyEnabled, forKey: DOUBLE_JEOPARDY_ENABLED_KEY)
         updateQuestionAmounts()
     }
     
@@ -79,7 +79,7 @@ class SingleJeopardy: UIViewController {
     }
     
     private func updateQuestionAmounts() {
-        if defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED) == false {
+        if defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED_KEY) == false {
             var amount = 200
             
             for (idx, btn) in enumerate(questionAmountButtons) {

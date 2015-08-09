@@ -19,7 +19,7 @@ class DailyDouble: UIViewController {
     
     let defaults = NSUserDefaults.standardUserDefaults()
     let TOTAL_KEY = "total"
-    let FINAL_JEOPARDY_KEY = "final_jeopardy"
+    let FINAL_JEOPARDY_ENABLED_KEY = "final_jeopardy_enabled"
 
     @IBAction func wagerTextFieldEditingChanged(sender: UITextField) {
         let total = defaults.integerForKey(TOTAL_KEY)
@@ -61,13 +61,21 @@ class DailyDouble: UIViewController {
     }
     
     private func animateAnswerButtons() {
-        if defaults.boolForKey(FINAL_JEOPARDY_KEY) == false {
+        if defaults.boolForKey(FINAL_JEOPARDY_ENABLED_KEY) == false {
             springWithCompletion(0.4, {
                 self.hideAnswerButtons()
                 self.incorrectButton.alpha = 0.99
                 self.correctButton.alpha = 0.99
                 }, { finished in
                     self.performSegueWithIdentifier("dailyDoubleToQuestion", sender: self)
+            })
+        } else {
+            springWithCompletion(0.4, {
+                self.hideAnswerButtons()
+                self.incorrectButton.alpha = 0.99
+                self.correctButton.alpha = 0.99
+            }, { finished in
+                self.performSegueWithIdentifier("finalJeopardyToFinalScreen", sender: self)
             })
         }
     }
