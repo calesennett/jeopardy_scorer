@@ -1,5 +1,5 @@
 framework module Spring {
-  umbrella header "Pods-JeopardyScorer-Spring-umbrella.h"
+  umbrella header "Spring-umbrella.h"
 
   export *
   module * { export * }

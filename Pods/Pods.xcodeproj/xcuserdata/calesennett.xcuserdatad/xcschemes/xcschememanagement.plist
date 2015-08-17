@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-JeopardyScorer-Spring.xcscheme</key>
+		<key>Pods-JeopardyScorer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-JeopardyScorer.xcscheme</key>
+		<key>Spring.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1AF70F4C795088567363FC7E</key>
+		<key>4ADDC830F1F3957A877DC0A28F0CBD4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBF09BCE9000F7FDC169C1D9</key>
+		<key>9CEEFDBD53837098C26AA66167B9A34F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

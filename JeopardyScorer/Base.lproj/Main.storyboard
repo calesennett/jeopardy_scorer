@@ -253,6 +253,35 @@
                                     <action selector="questionAmountButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t6u-rQ-3Dt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hXc-vR-aPR">
+                                <rect key="frame" x="0.0" y="474" width="375" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.81176470590000005" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <state key="normal" title="CORRECT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonDidPress:" destination="WQg-U9-7ET" eventType="touchUpInside" id="aqJ-fl-SrU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dz8-sK-aMm">
+                                <rect key="frame" x="0.0" y="570" width="375" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.26274509800000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <state key="normal" title="INCORRECT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonDidPress:" destination="WQg-U9-7ET" eventType="touchUpInside" id="IIq-db-31q"/>
+                                    <action selector="incorrectAnswerButtonDidPress:" destination="SFF-NS-u1h" eventType="touchUpInside" id="cVw-sL-rdN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -262,6 +291,8 @@
                     <connections>
                         <outlet property="correctButton" destination="xl7-Ke-fZD" id="7HI-qE-2Fj"/>
                         <outlet property="dailyDoubleButton" destination="KnB-mL-JkL" id="kOl-wN-sRc"/>
+                        <outlet property="dailyDoubleCorrectButton" destination="hXc-vR-aPR" id="1pw-SW-0D1"/>
+                        <outlet property="dailyDoubleIncorrectButton" destination="dz8-sK-aMm" id="lFc-PI-a0x"/>
                         <outlet property="didNotAnswerButton" destination="ZOO-T3-9lB" id="Tjf-Vn-Zqu"/>
                         <outlet property="doubleJeopardyButton" destination="Hgh-Lv-tuV" id="orf-v2-c2l"/>
                         <outlet property="finalJeopardyButton" destination="vLQ-hA-HUf" id="UwX-c2-Nvl"/>
@@ -275,6 +306,9 @@
                         <outletCollection property="questionAmountButtons" destination="QnF-o3-m8R" collectionClass="NSMutableArray" id="Oc1-hy-lVA"/>
                         <outletCollection property="questionAmountButtons" destination="A5c-NA-klf" collectionClass="NSMutableArray" id="g2I-Bm-KMl"/>
                         <outletCollection property="questionAmountButtons" destination="FcI-Y7-4Aa" collectionClass="NSMutableArray" id="m4q-bI-V2I"/>
+                        <outletCollection property="optionButtons" destination="KnB-mL-JkL" collectionClass="NSMutableArray" id="9Lu-QJ-kia"/>
+                        <outletCollection property="optionButtons" destination="Hgh-Lv-tuV" collectionClass="NSMutableArray" id="UiE-oV-DHs"/>
+                        <outletCollection property="optionButtons" destination="vLQ-hA-HUf" collectionClass="NSMutableArray" id="hLG-jB-SkP"/>
                         <segue destination="SFF-NS-u1h" kind="modal" identifier="questionToAnswer" animates="NO" id="fHF-AS-y18"/>
                         <segue destination="WQg-U9-7ET" kind="modal" identifier="questionToDailyDouble" animates="NO" id="m7i-gZ-2DH"/>
                     </connections>
@@ -372,6 +406,60 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kCL-jB-qWK">
+                                <rect key="frame" x="217" y="80" width="142" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Double Jeopardy">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doubleJeopardyButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fzw-gz-8YE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d9C-5a-Efb">
+                                <rect key="frame" x="217" y="124" width="142" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Final Jeopardy">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finalJeopardyButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gjf-hM-CKL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IPs-2n-zWG">
+                                <rect key="frame" x="217" y="36" width="142" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Daily Double">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dailyDoubleButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1xA-EG-dRR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -510,6 +598,60 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Heg-r8-RMc">
+                                <rect key="frame" x="217" y="80" width="142" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Double Jeopardy">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doubleJeopardyButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="I4H-1F-epD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cE6-iA-8bP">
+                                <rect key="frame" x="217" y="36" width="142" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Daily Double">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dailyDoubleButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zdN-s8-qfp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SoH-eQ-Dk0">
+                                <rect key="frame" x="217" y="124" width="142" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Final Jeopardy">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finalJeopardyButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RrC-Nx-8US"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -522,6 +664,9 @@
                         <outlet property="incorrectButton" destination="tBa-Zo-aiL" id="6hQ-PY-rNu"/>
                         <outlet property="totalLabel" destination="F4l-Pq-FAi" id="SuQ-qu-qbG"/>
                         <outlet property="wagerTextField" destination="Qdf-op-CUv" id="e8i-qM-mTa"/>
+                        <outletCollection property="optionButtons" destination="cE6-iA-8bP" collectionClass="NSMutableArray" id="U4J-BX-DrI"/>
+                        <outletCollection property="optionButtons" destination="Heg-r8-RMc" collectionClass="NSMutableArray" id="gdi-vQ-JdS"/>
+                        <outletCollection property="optionButtons" destination="SoH-eQ-Dk0" collectionClass="NSMutableArray" id="ul1-kU-gHy"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="dailyDoubleToQuestion" id="EhU-qC-0hd"/>
                         <segue destination="Weg-xM-3yp" kind="modal" identifier="finalJeopardyToFinalScreen" id="SR4-64-ZXt"/>
                     </connections>
@@ -598,7 +743,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="EhU-qC-0hd"/>
         <segue reference="m7i-gZ-2DH"/>
-        <segue reference="vDB-ke-6OY"/>
     </inferredMetricsTieBreakers>
 </document>
