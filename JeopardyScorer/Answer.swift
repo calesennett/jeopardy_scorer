@@ -31,7 +31,7 @@ class Answer: UIViewController {
     
     @IBAction func correctAnswerButtonDidPress(sender: UIButton) {
         let questionButtonText = amountButton.titleLabel!.text
-        let questionAmount = questionButtonText!.substringFromIndex(advance(questionButtonText!.startIndex, 1)).toInt()
+        let questionAmount = Int(questionButtonText!.substringFromIndex(advance(questionButtonText!.startIndex, 1)))
         
         var newTotal : Int!
         if let previousTotal = defaults.objectForKey(TOTAL_KEY) as? Int {
@@ -46,7 +46,7 @@ class Answer: UIViewController {
     
     @IBAction func incorrectAnswerButtonDidPress(sender: UIButton) {
         let questionButtonText = amountButton.titleLabel!.text
-        let questionAmount = questionButtonText!.substringFromIndex(advance(questionButtonText!.startIndex, 1)).toInt()
+        let questionAmount = Int(questionButtonText!.substringFromIndex(advance(questionButtonText!.startIndex, 1)))
         
         var newTotal : Int!
         if let previousTotal = defaults.objectForKey(TOTAL_KEY) as? Int {
@@ -64,24 +64,24 @@ class Answer: UIViewController {
     }
     
     private func hideAnswerButtons() {
-        springWithDelay(0.4, 0.05, {
+        springWithDelay(0.4, delay: 0.05, animations: {
             self.didNotAnswerButton.transform = CGAffineTransformMakeTranslation(0, 300)
         })
-        springWithDelay(0.4, 0.1, {
+        springWithDelay(0.4, delay: 0.1, animations: {
             self.incorrectAnswerButton.transform = CGAffineTransformMakeTranslation(0, 300)
         })
-        springWithDelay(0.4, 0.15, {
+        springWithDelay(0.4, delay: 0.15, animations: {
             self.correctAnswerButton.transform = CGAffineTransformMakeTranslation(0, 300)
         })
     }
     
     private func animateAnswerButtons() {
-        springWithCompletion(0.4, {
+        springWithCompletion(0.4, animations: {
             self.hideAnswerButtons()
             self.didNotAnswerButton.alpha = 0.99
             self.incorrectAnswerButton.alpha = 0.99
             self.correctAnswerButton.alpha = 0.99
-        }, { finished in
+        }, completion: { finished in
             self.performSegueWithIdentifier("answerToQuestion", sender: self)
         })
     }

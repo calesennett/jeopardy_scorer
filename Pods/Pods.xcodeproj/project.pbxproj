@@ -1,634 +1,1825 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0A4C3A62E1091FF665D19A3C /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69DEC3CC53596D473D7D4C /* AsyncImageView.swift */; };
-		0C035D18AA2A47355A3CE325 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E739779B72B3995807FB8D /* SpringView.swift */; };
-		0CBA088DA2D3AF6A18F6DE25 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF21EFD71CCB7EF7D38F684 /* KeyboardLayoutConstraint.swift */; };
-		19EBF6113130769CEFEFDE5A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202CD0CF4E040DBE78ACE338 /* ImageLoader.swift */; };
-		2439069F5D88183EC03CC577 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6891A870520FC5935A0B89E /* SoundPlayer.swift */; };
-		268D3079AB80CAB62162BFAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D71DB4944BE9FCC69355E13 /* Foundation.framework */; };
-		30554666EE028304ADD41EEA /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E812BFA434D0DC687CB2EB2 /* DesignableTextView.swift */; };
-		31FA6C336211EEB4A25CFB9F /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46C165828EBDB0EE6F7801 /* TransitionManager.swift */; };
-		323499CA7909B2BB7CD5D492 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B936CA39C83320DE82F66 /* SpringButton.swift */; };
-		36961F749ACB5FFD35DBE513 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C246013B64760C69480B1BE /* Spring.swift */; };
-		37542EC290199C37B76D643F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064D9803B1E1BF269569F2A0 /* LoadingView.swift */; };
-		3B6FA090C137AE905679F334 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DE38244DC417CBAD2EE58 /* SpringAnimation.swift */; };
-		42590832CEC485D3D7E42642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D71DB4944BE9FCC69355E13 /* Foundation.framework */; };
-		4700C706BE61331AD87BEB71 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84A3F4F6B4638BC4C8AF364 /* DesignableButton.swift */; };
-		4A1D5C8FDACAA2DAD9BDDD87 /* Pods-JeopardyScorer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4628CEA92F01895A5ABF2101 /* Pods-JeopardyScorer-dummy.m */; };
-		549837D752A05E6F11540100 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011D1794AA2BABBEFAA0209 /* DesignableLabel.swift */; };
-		5E9C428EE7A62A8098830761 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20D8827F4E2207C5030D7C9 /* AutoTextView.swift */; };
-		69594ADA5A7E4B569C80BFCC /* Pods-JeopardyScorer-Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 211BE66EDA3975DB31A71556 /* Pods-JeopardyScorer-Spring-dummy.m */; };
-		7D708837452062A91945AE08 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E6D63F4100D7AF461B80F /* DesignableTextField.swift */; };
-		81512E35A15F4B287C2CE8BD /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 660CD801CD1389EB2B55EDDC /* LoadingView.xib */; };
-		87F1213D7D719CAE5D905610 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B54BAA984FD655E7FF197 /* DesignableView.swift */; };
-		8981B623BBE739930E436F08 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13F78793AE7C5EDEBF68E9 /* SpringImageView.swift */; };
-		8C37FBF641092B50A9FD9B86 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5759B7B6A5AA38509A6659C0 /* SpringTextField.swift */; };
-		9C8307EFB55761F520392811 /* Pods-JeopardyScorer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F33E3D3728D031B37A6EB1B /* Pods-JeopardyScorer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DEDA81523A289E9CF537F56 /* Pods-JeopardyScorer-Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D04F584439E8402D4216E3 /* Pods-JeopardyScorer-Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFC68D5C5F3942C214A650E0 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F713D726869CECA1567BE81 /* TransitionZoom.swift */; };
-		BA54CF6435BD126E136C817C /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B014CA412860DED3650B4 /* UnwindSegue.swift */; };
-		BB291E3D124BA21CFAE12721 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B22D18BF0EA12739201079 /* Misc.swift */; };
-		C5E1DB486A0C6998158DFAAB /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B7EA3A44889E953149DF2E /* AsyncButton.swift */; };
-		D76C6C7C4489D71C5A39ECB1 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9373990914F35D5DD5ABC078 /* SpringTextView.swift */; };
-		E93E8D8E47ECB06724179A37 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607F31D0C9CF2AA4EE842CC0 /* SpringLabel.swift */; };
-		F0EBD6DC3D9FFD05DF945B93 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3134D404658488736A3C658 /* DesignableImageView.swift */; };
-		F6657D56A3F45FB57B193222 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DF30CD3CD90E3C8DC760C /* DesignableTabBarController.swift */; };
-		FA51A66F69A3A29A6D229AC2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03452D77AE7B5C3C8F1C678 /* BlurView.swift */; };
-		FF0A282ADDEBC4105CF77C34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED576DF67AEA576BC810AA8 /* Images.xcassets */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EA555DAA0F2E15643EE5A574 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A4185C8EF053EE07D3C9EEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AF70F4C795088567363FC7E;
-			remoteInfo = "Pods-JeopardyScorer-Spring";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		056D7701219CE307FD44E79A /* Pods-JeopardyScorer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JeopardyScorer-resources.sh"; sourceTree = "<group>"; };
-		064D9803B1E1BF269569F2A0 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
-		1052F8C5F402E52AA9FCF6E9 /* Pods-JeopardyScorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeopardyScorer.debug.xcconfig"; sourceTree = "<group>"; };
-		1748C99E1D7B922DEEE35345 /* Pods-JeopardyScorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeopardyScorer.release.xcconfig"; sourceTree = "<group>"; };
-		1C0E6D63F4100D7AF461B80F /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
-		202CD0CF4E040DBE78ACE338 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
-		20EB3C3C4C69F875D38298DE /* Pods-JeopardyScorer-Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JeopardyScorer-Spring.modulemap"; sourceTree = "<group>"; };
-		211BE66EDA3975DB31A71556 /* Pods-JeopardyScorer-Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JeopardyScorer-Spring-dummy.m"; sourceTree = "<group>"; };
-		211FF876663AF3A9E854AC7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ACDA01D6E463FCD7F8D4BD2 /* Pods-JeopardyScorer-Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeopardyScorer-Spring.xcconfig"; sourceTree = "<group>"; };
-		3D71DB4944BE9FCC69355E13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3E2B53A510D07C8B17BE02FC /* Pods-JeopardyScorer-Spring-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeopardyScorer-Spring-Private.xcconfig"; sourceTree = "<group>"; };
-		4628CEA92F01895A5ABF2101 /* Pods-JeopardyScorer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JeopardyScorer-dummy.m"; sourceTree = "<group>"; };
-		4C246013B64760C69480B1BE /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
-		4F713D726869CECA1567BE81 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
-		5759B7B6A5AA38509A6659C0 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
-		5ADC73A742EFB4DCDC25AE33 /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F64BA9E86CB8479A0A89AB6 /* Pods-JeopardyScorer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JeopardyScorer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		607F31D0C9CF2AA4EE842CC0 /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
-		644C2DB5EB628E24BFAB6D95 /* Pods_JeopardyScorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeopardyScorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		646B936CA39C83320DE82F66 /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
-		660CD801CD1389EB2B55EDDC /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
-		6D1B54BAA984FD655E7FF197 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
-		7F33E3D3728D031B37A6EB1B /* Pods-JeopardyScorer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JeopardyScorer-umbrella.h"; sourceTree = "<group>"; };
-		87E739779B72B3995807FB8D /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
-		89D04F584439E8402D4216E3 /* Pods-JeopardyScorer-Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JeopardyScorer-Spring-umbrella.h"; sourceTree = "<group>"; };
-		8BF21EFD71CCB7EF7D38F684 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
-		9373990914F35D5DD5ABC078 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
-		94B22D18BF0EA12739201079 /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
-		98B7EA3A44889E953149DF2E /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
-		98DE0644525ECF03CA30781D /* Pods-JeopardyScorer-Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JeopardyScorer-Spring-prefix.pch"; sourceTree = "<group>"; };
-		9E812BFA434D0DC687CB2EB2 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
-		9F46C165828EBDB0EE6F7801 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
-		A223ADB522A0F92BC882E1E9 /* Pods-JeopardyScorer-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JeopardyScorer-environment.h"; sourceTree = "<group>"; };
-		A610697BB3492DBC0A603C21 /* Pods-JeopardyScorer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JeopardyScorer.modulemap"; sourceTree = "<group>"; };
-		A84A3F4F6B4638BC4C8AF364 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
-		AA3B014CA412860DED3650B4 /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
-		B3134D404658488736A3C658 /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
-		BA13F78793AE7C5EDEBF68E9 /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
-		D51EE3636C6C0F3535BB1AC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D956751B31BF0BA2FB38C645 /* Pods-JeopardyScorer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JeopardyScorer-acknowledgements.plist"; sourceTree = "<group>"; };
-		DED576DF67AEA576BC810AA8 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
-		E20D8827F4E2207C5030D7C9 /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
-		E6891A870520FC5935A0B89E /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
-		E7D64A0BEE88DC3C8F8CF853 /* Pods-JeopardyScorer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JeopardyScorer-frameworks.sh"; sourceTree = "<group>"; };
-		F011D1794AA2BABBEFAA0209 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
-		F03452D77AE7B5C3C8F1C678 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
-		F25A90BEF5C6381C85C4F08C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F73DE38244DC417CBAD2EE58 /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
-		F79DF30CD3CD90E3C8DC760C /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
-		FF69DEC3CC53596D473D7D4C /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		5735B5D22591352F17990D01 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42590832CEC485D3D7E42642 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7290FD09268603ACE5128733 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				268D3079AB80CAB62162BFAA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		2EE3DCA8BDEFAFD0E48DBCE2 /* Spring */ = {
-			isa = PBXGroup;
-			children = (
-				98B7EA3A44889E953149DF2E /* AsyncButton.swift */,
-				FF69DEC3CC53596D473D7D4C /* AsyncImageView.swift */,
-				E20D8827F4E2207C5030D7C9 /* AutoTextView.swift */,
-				F03452D77AE7B5C3C8F1C678 /* BlurView.swift */,
-				A84A3F4F6B4638BC4C8AF364 /* DesignableButton.swift */,
-				B3134D404658488736A3C658 /* DesignableImageView.swift */,
-				F011D1794AA2BABBEFAA0209 /* DesignableLabel.swift */,
-				F79DF30CD3CD90E3C8DC760C /* DesignableTabBarController.swift */,
-				1C0E6D63F4100D7AF461B80F /* DesignableTextField.swift */,
-				9E812BFA434D0DC687CB2EB2 /* DesignableTextView.swift */,
-				6D1B54BAA984FD655E7FF197 /* DesignableView.swift */,
-				202CD0CF4E040DBE78ACE338 /* ImageLoader.swift */,
-				8BF21EFD71CCB7EF7D38F684 /* KeyboardLayoutConstraint.swift */,
-				064D9803B1E1BF269569F2A0 /* LoadingView.swift */,
-				94B22D18BF0EA12739201079 /* Misc.swift */,
-				E6891A870520FC5935A0B89E /* SoundPlayer.swift */,
-				4C246013B64760C69480B1BE /* Spring.swift */,
-				F73DE38244DC417CBAD2EE58 /* SpringAnimation.swift */,
-				646B936CA39C83320DE82F66 /* SpringButton.swift */,
-				BA13F78793AE7C5EDEBF68E9 /* SpringImageView.swift */,
-				607F31D0C9CF2AA4EE842CC0 /* SpringLabel.swift */,
-				5759B7B6A5AA38509A6659C0 /* SpringTextField.swift */,
-				9373990914F35D5DD5ABC078 /* SpringTextView.swift */,
-				87E739779B72B3995807FB8D /* SpringView.swift */,
-				9F46C165828EBDB0EE6F7801 /* TransitionManager.swift */,
-				4F713D726869CECA1567BE81 /* TransitionZoom.swift */,
-				AA3B014CA412860DED3650B4 /* UnwindSegue.swift */,
-				6F87738A22D6D05292DC199D /* Resources */,
-				8EF8E661AD30A6A8A42A3FB6 /* Support Files */,
-			);
-			path = Spring;
-			sourceTree = "<group>";
-		};
-		5087D9D7D7050878A8EE6E42 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3D71DB4944BE9FCC69355E13 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		61B1E92950F31598BE33635C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BDCEEF4CF6CCDE18815E4064 /* Pods-JeopardyScorer */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6F87738A22D6D05292DC199D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DED576DF67AEA576BC810AA8 /* Images.xcassets */,
-				660CD801CD1389EB2B55EDDC /* LoadingView.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		8EF8E661AD30A6A8A42A3FB6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D51EE3636C6C0F3535BB1AC6 /* Info.plist */,
-				20EB3C3C4C69F875D38298DE /* Pods-JeopardyScorer-Spring.modulemap */,
-				3ACDA01D6E463FCD7F8D4BD2 /* Pods-JeopardyScorer-Spring.xcconfig */,
-				3E2B53A510D07C8B17BE02FC /* Pods-JeopardyScorer-Spring-Private.xcconfig */,
-				211BE66EDA3975DB31A71556 /* Pods-JeopardyScorer-Spring-dummy.m */,
-				98DE0644525ECF03CA30781D /* Pods-JeopardyScorer-Spring-prefix.pch */,
-				89D04F584439E8402D4216E3 /* Pods-JeopardyScorer-Spring-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-JeopardyScorer-Spring";
-			sourceTree = "<group>";
-		};
-		96467FC5D7C119FDD22AD25F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5087D9D7D7050878A8EE6E42 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9CB492D5032ADC49F65CF649 = {
-			isa = PBXGroup;
-			children = (
-				F25A90BEF5C6381C85C4F08C /* Podfile */,
-				96467FC5D7C119FDD22AD25F /* Frameworks */,
-				AC91F00BEDA79FFB5CC5BA91 /* Pods */,
-				EFD6D831728F04E8C99EAE96 /* Products */,
-				61B1E92950F31598BE33635C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		AC91F00BEDA79FFB5CC5BA91 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2EE3DCA8BDEFAFD0E48DBCE2 /* Spring */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BDCEEF4CF6CCDE18815E4064 /* Pods-JeopardyScorer */ = {
-			isa = PBXGroup;
-			children = (
-				211FF876663AF3A9E854AC7B /* Info.plist */,
-				A610697BB3492DBC0A603C21 /* Pods-JeopardyScorer.modulemap */,
-				5F64BA9E86CB8479A0A89AB6 /* Pods-JeopardyScorer-acknowledgements.markdown */,
-				D956751B31BF0BA2FB38C645 /* Pods-JeopardyScorer-acknowledgements.plist */,
-				4628CEA92F01895A5ABF2101 /* Pods-JeopardyScorer-dummy.m */,
-				A223ADB522A0F92BC882E1E9 /* Pods-JeopardyScorer-environment.h */,
-				E7D64A0BEE88DC3C8F8CF853 /* Pods-JeopardyScorer-frameworks.sh */,
-				056D7701219CE307FD44E79A /* Pods-JeopardyScorer-resources.sh */,
-				7F33E3D3728D031B37A6EB1B /* Pods-JeopardyScorer-umbrella.h */,
-				1052F8C5F402E52AA9FCF6E9 /* Pods-JeopardyScorer.debug.xcconfig */,
-				1748C99E1D7B922DEEE35345 /* Pods-JeopardyScorer.release.xcconfig */,
-			);
-			name = "Pods-JeopardyScorer";
-			path = "Target Support Files/Pods-JeopardyScorer";
-			sourceTree = "<group>";
-		};
-		EFD6D831728F04E8C99EAE96 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				644C2DB5EB628E24BFAB6D95 /* Pods_JeopardyScorer.framework */,
-				5ADC73A742EFB4DCDC25AE33 /* Spring.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		95AD479F21AA675243479DD2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DEDA81523A289E9CF537F56 /* Pods-JeopardyScorer-Spring-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4AB761D8F4D3CAD3757F054 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C8307EFB55761F520392811 /* Pods-JeopardyScorer-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		1AF70F4C795088567363FC7E /* Pods-JeopardyScorer-Spring */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 033788786290AD4275E73987 /* Build configuration list for PBXNativeTarget "Pods-JeopardyScorer-Spring" */;
-			buildPhases = (
-				C333299036A8DD4F28A40A77 /* Sources */,
-				7290FD09268603ACE5128733 /* Frameworks */,
-				1863405A294D82CA24A5DA96 /* Resources */,
-				95AD479F21AA675243479DD2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-JeopardyScorer-Spring";
-			productName = "Pods-JeopardyScorer-Spring";
-			productReference = 5ADC73A742EFB4DCDC25AE33 /* Spring.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BBF09BCE9000F7FDC169C1D9 /* Pods-JeopardyScorer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A2CF586DBD26A4F75CAED3B /* Build configuration list for PBXNativeTarget "Pods-JeopardyScorer" */;
-			buildPhases = (
-				6DC5C7381263CDCF0A225E7B /* Sources */,
-				5735B5D22591352F17990D01 /* Frameworks */,
-				F4AB761D8F4D3CAD3757F054 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D86D2E4429E4BA8066FCE8A9 /* PBXTargetDependency */,
-			);
-			name = "Pods-JeopardyScorer";
-			productName = "Pods-JeopardyScorer";
-			productReference = 644C2DB5EB628E24BFAB6D95 /* Pods_JeopardyScorer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		2A4185C8EF053EE07D3C9EEC /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0640;
-			};
-			buildConfigurationList = 7F9807EB963712D475AB7537 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 9CB492D5032ADC49F65CF649;
-			productRefGroup = EFD6D831728F04E8C99EAE96 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				BBF09BCE9000F7FDC169C1D9 /* Pods-JeopardyScorer */,
-				1AF70F4C795088567363FC7E /* Pods-JeopardyScorer-Spring */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		1863405A294D82CA24A5DA96 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF0A282ADDEBC4105CF77C34 /* Images.xcassets in Resources */,
-				81512E35A15F4B287C2CE8BD /* LoadingView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		6DC5C7381263CDCF0A225E7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A1D5C8FDACAA2DAD9BDDD87 /* Pods-JeopardyScorer-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C333299036A8DD4F28A40A77 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5E1DB486A0C6998158DFAAB /* AsyncButton.swift in Sources */,
-				0A4C3A62E1091FF665D19A3C /* AsyncImageView.swift in Sources */,
-				5E9C428EE7A62A8098830761 /* AutoTextView.swift in Sources */,
-				FA51A66F69A3A29A6D229AC2 /* BlurView.swift in Sources */,
-				4700C706BE61331AD87BEB71 /* DesignableButton.swift in Sources */,
-				F0EBD6DC3D9FFD05DF945B93 /* DesignableImageView.swift in Sources */,
-				549837D752A05E6F11540100 /* DesignableLabel.swift in Sources */,
-				F6657D56A3F45FB57B193222 /* DesignableTabBarController.swift in Sources */,
-				7D708837452062A91945AE08 /* DesignableTextField.swift in Sources */,
-				30554666EE028304ADD41EEA /* DesignableTextView.swift in Sources */,
-				87F1213D7D719CAE5D905610 /* DesignableView.swift in Sources */,
-				19EBF6113130769CEFEFDE5A /* ImageLoader.swift in Sources */,
-				0CBA088DA2D3AF6A18F6DE25 /* KeyboardLayoutConstraint.swift in Sources */,
-				37542EC290199C37B76D643F /* LoadingView.swift in Sources */,
-				BB291E3D124BA21CFAE12721 /* Misc.swift in Sources */,
-				69594ADA5A7E4B569C80BFCC /* Pods-JeopardyScorer-Spring-dummy.m in Sources */,
-				2439069F5D88183EC03CC577 /* SoundPlayer.swift in Sources */,
-				36961F749ACB5FFD35DBE513 /* Spring.swift in Sources */,
-				3B6FA090C137AE905679F334 /* SpringAnimation.swift in Sources */,
-				323499CA7909B2BB7CD5D492 /* SpringButton.swift in Sources */,
-				8981B623BBE739930E436F08 /* SpringImageView.swift in Sources */,
-				E93E8D8E47ECB06724179A37 /* SpringLabel.swift in Sources */,
-				8C37FBF641092B50A9FD9B86 /* SpringTextField.swift in Sources */,
-				D76C6C7C4489D71C5A39ECB1 /* SpringTextView.swift in Sources */,
-				0C035D18AA2A47355A3CE325 /* SpringView.swift in Sources */,
-				31FA6C336211EEB4A25CFB9F /* TransitionManager.swift in Sources */,
-				AFC68D5C5F3942C214A650E0 /* TransitionZoom.swift in Sources */,
-				BA54CF6435BD126E136C817C /* UnwindSegue.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D86D2E4429E4BA8066FCE8A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-JeopardyScorer-Spring";
-			target = 1AF70F4C795088567363FC7E /* Pods-JeopardyScorer-Spring */;
-			targetProxy = EA555DAA0F2E15643EE5A574 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0EE1B3944BF2FCF9B5E0E073 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E2B53A510D07C8B17BE02FC /* Pods-JeopardyScorer-Spring-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JeopardyScorer-Spring/Pods-JeopardyScorer-Spring-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-JeopardyScorer-Spring/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JeopardyScorer-Spring/Pods-JeopardyScorer-Spring.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Spring;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2C5313F6A39B6D8AEFE624BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1748C99E1D7B922DEEE35345 /* Pods-JeopardyScorer.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JeopardyScorer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_JeopardyScorer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5D2A40FF9BC86A71EEEBB5C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		794ACC46D3EBE730651E0EBC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		843FEBBE89AB63AB7067A425 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E2B53A510D07C8B17BE02FC /* Pods-JeopardyScorer-Spring-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JeopardyScorer-Spring/Pods-JeopardyScorer-Spring-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-JeopardyScorer-Spring/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JeopardyScorer-Spring/Pods-JeopardyScorer-Spring.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Spring;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DA3B71CD1329D07B16199FC1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1052F8C5F402E52AA9FCF6E9 /* Pods-JeopardyScorer.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JeopardyScorer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_JeopardyScorer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		033788786290AD4275E73987 /* Build configuration list for PBXNativeTarget "Pods-JeopardyScorer-Spring" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0EE1B3944BF2FCF9B5E0E073 /* Debug */,
-				843FEBBE89AB63AB7067A425 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6A2CF586DBD26A4F75CAED3B /* Build configuration list for PBXNativeTarget "Pods-JeopardyScorer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA3B71CD1329D07B16199FC1 /* Debug */,
-				2C5313F6A39B6D8AEFE624BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7F9807EB963712D475AB7537 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				794ACC46D3EBE730651E0EBC /* Debug */,
-				5D2A40FF9BC86A71EEEBB5C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 2A4185C8EF053EE07D3C9EEC /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>017820BFEFFA04C8392724C5BE0810A8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SpringImageView.swift</string>
+			<key>path</key>
+			<string>Spring/SpringImageView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>084A26CC6355487E7392E536B44D91A7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>644DF8F1DD47151F078FE505B9287BE4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0B55D2ABBCEE533CB779FDB736828A9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0BEDB3DB16C4717070A84388500660B0</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4ADDC830F1F3957A877DC0A28F0CBD4E</string>
+			<key>remoteInfo</key>
+			<string>Spring</string>
+		</dict>
+		<key>0C926B1D844554EFAF143C26682CB608</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAB550BFBDE25FD73B2CAF77A9F8FBBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>108AA2994D7815017CD629C1646FFF61</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Misc.swift</string>
+			<key>path</key>
+			<string>Spring/Misc.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>17786A103C8CD0AAB191C5A9353EBBFC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DesignableView.swift</string>
+			<key>path</key>
+			<string>Spring/DesignableView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1921EF05F19853DACB4C9A0618694647</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6106FA0626AF6849CC0B8FA5321C5814</string>
+				<string>C55DE6BD2C60A6FC893D8DB339FC4553</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1AC31D153712963296C384E7A8F76E0D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3777E2A4FE672FDBFF8F0C87F0D6F5B5</string>
+				<string>6413902EE4081DE12CCDBF423224684C</string>
+				<string>5C053239576A8C7FB72E419C24E5BEC8</string>
+				<string>7B5A89B6D0103830322877CF30637E31</string>
+				<string>6F5FA4219C27344F5A01D3CDD86C3EAB</string>
+				<string>DAF6A47E3B034D70B6167D87F109E2D3</string>
+				<string>4ACF5E472382B95FBDED0550E24C18DB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Spring</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>21C0F51565A5346A442CC17CBFEE3FBD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SoundPlayer.swift</string>
+			<key>path</key>
+			<string>Spring/SoundPlayer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>21F0D8FA20A0BFC40C66582B29294976</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7784ABE02E493AE3288BA2467DED9485</string>
+				<string>B3006549161976151BA776A6BD4F81F8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>243BD3D3C3D5BDAF745916587420D963</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DesignableTabBarController.swift</string>
+			<key>path</key>
+			<string>Spring/DesignableTabBarController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27156FA2EE58423E96F91E849944DE33</key>
+		<dict>
+			<key>fileRef</key>
+			<string>17786A103C8CD0AAB191C5A9353EBBFC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>276887C3869F383DA42BC7A4D2DBEF3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FB15F19ED9C1E6AF23DABA462D9E3D0D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>281ACA5F324A1A67F397E55FC273EDD0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>91059726DC94563BC9E3159625138DBE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2834662A3665BDF7D2F61BA3631A66AD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SpringLabel.swift</string>
+			<key>path</key>
+			<string>Spring/SpringLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AA05AF9C3A14EE0E32F42C6E6D42D34F</string>
+				<string>511103F7F15A7E8F83B268EA03462CAB</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3777E2A4FE672FDBFF8F0C87F0D6F5B5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>37F3D3BA73F633688D4B0A041AFDFEFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>BlurView.swift</string>
+			<key>path</key>
+			<string>Spring/BlurView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3A9F0BEBEF41C82DFFB8BE7BC6047CBF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7B5A89B6D0103830322877CF30637E31</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1.0.3</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>$(CURRENT_PROJECT_VERSION)</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Spring/Spring-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Spring/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.4</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Spring/Spring.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>Spring</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B15962FE6CDF703F7517DBAF87AD6E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>714B835B557B3F72D89945095C23B1A4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3CCCBE0BE52DCC0FF92603D1F6A322B5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F230ED8239B6B2345C92F2BE428604A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>432B0722C67B0D7DB1D6E5C53BB963BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3F9CC2BB93470648CCEE42F06CF16EF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SpringButton.swift</string>
+			<key>path</key>
+			<string>Spring/SpringButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>402A71694EFE804A26B2D31F5EFDDB31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Spring</string>
+			<key>target</key>
+			<string>4ADDC830F1F3957A877DC0A28F0CBD4E</string>
+			<key>targetProxy</key>
+			<string>0BEDB3DB16C4717070A84388500660B0</string>
+		</dict>
+		<key>415BA603BC5DC1BB61751DC4A4D675A1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>98195BE3AE0229D66A4925FEB3E88AD0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>432B0722C67B0D7DB1D6E5C53BB963BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>451746300E823F97EB2F05F955A14B46</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Spring.framework</string>
+			<key>path</key>
+			<string>Spring.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4AC63369F44D2E1FF5754F4817036BE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F9CC2BB93470648CCEE42F06CF16EF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4ACF5E472382B95FBDED0550E24C18DB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Spring-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4ADDC830F1F3957A877DC0A28F0CBD4E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>61544AA60217E4B4BA54112FF8563B1E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F6B8408D5CBE56BBC1C0DC03998D76CB</string>
+				<string>BA7956F2792C1B62882F7A0B02BFC5FB</string>
+				<string>21F0D8FA20A0BFC40C66582B29294976</string>
+				<string>98DC239BCE4043C788B606F584C2E747</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Spring</string>
+			<key>productName</key>
+			<string>Spring</string>
+			<key>productReference</key>
+			<string>451746300E823F97EB2F05F955A14B46</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>4AEC16254AB33CD52714CBF96CB8A50D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B47A46C4CDA26763F8A89977615BA750</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4DF1373004EE5CF38BDD54B6746887D0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LoadingView.swift</string>
+			<key>path</key>
+			<string>Spring/LoadingView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>50AB8DC0029F616AC6A34A74FDAFD750</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>KeyboardLayoutConstraint.swift</string>
+			<key>path</key>
+			<string>Spring/KeyboardLayoutConstraint.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>511103F7F15A7E8F83B268EA03462CAB</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.4</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>53F661C0CA7190D2CF05023FB33D61E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FB15F19ED9C1E6AF23DABA462D9E3D0D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C053239576A8C7FB72E419C24E5BEC8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Spring.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60B11326E117F16B77C4601D8FF6FC0B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Spring.swift</string>
+			<key>path</key>
+			<string>Spring/Spring.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6106FA0626AF6849CC0B8FA5321C5814</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>name</key>
+			<string>Images.xcassets</string>
+			<key>path</key>
+			<string>SpringApp/Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>61544AA60217E4B4BA54112FF8563B1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>8877AEAB4255538D7511BABC4EA310AD</string>
+				<string>3A9F0BEBEF41C82DFFB8BE7BC6047CBF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>62621F07A67B010C0A57E78583E35917</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6413902EE4081DE12CCDBF423224684C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Spring.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>644DF8F1DD47151F078FE505B9287BE4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>AsyncImageView.swift</string>
+			<key>path</key>
+			<string>Spring/AsyncImageView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6898D00A17F0B59B9FB7D020642B0FE7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>243BD3D3C3D5BDAF745916587420D963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6F5FA4219C27344F5A01D3CDD86C3EAB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Spring-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>713C308BF15B48C7E01ECB8595266CFD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>714B835B557B3F72D89945095C23B1A4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DesignableLabel.swift</string>
+			<key>path</key>
+			<string>Spring/DesignableLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73DD0FB30CDB217927C27FE7D04F75EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SpringTextView.swift</string>
+			<key>path</key>
+			<string>Spring/SpringTextView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>747EC9F42A32387A595E40BE8E658168</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DesignableTextField.swift</string>
+			<key>path</key>
+			<string>Spring/DesignableTextField.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7480D7F88F7D6C491AC709D6A2485553</key>
+		<dict>
+			<key>fileRef</key>
+			<string>747EC9F42A32387A595E40BE8E658168</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749F5107943EE86EB0F864D52FAEEBCE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E4A0AC602C40EB73C98A8B13C15FF1D7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7784ABE02E493AE3288BA2467DED9485</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6106FA0626AF6849CC0B8FA5321C5814</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>78054845576BD105C4505ACCB26C9A77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5A10C62583F50B571B0FEE47047D3D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7B5A89B6D0103830322877CF30637E31</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Spring-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7B639C1CF665CE74FBD6494B9A6633AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DesignableImageView.swift</string>
+			<key>path</key>
+			<string>Spring/DesignableImageView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>415BA603BC5DC1BB61751DC4A4D675A1</string>
+				<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
+				<string>A493E22E7771C06144D1E8C1E4F075C1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83D313E70FABD3B63D31116FC62DDD68</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>TransitionManager.swift</string>
+			<key>path</key>
+			<string>Spring/TransitionManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>858ED576E4AADE88999137E0AA25F219</key>
+		<dict>
+			<key>fileRef</key>
+			<string>60B11326E117F16B77C4601D8FF6FC0B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>860E6166BDD6C7A2AF796EE6D7729971</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7B639C1CF665CE74FBD6494B9A6633AC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8877AEAB4255538D7511BABC4EA310AD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7B5A89B6D0103830322877CF30637E31</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1.0.3</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>$(CURRENT_PROJECT_VERSION)</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Spring/Spring-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Spring/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.4</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Spring/Spring.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>Spring</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>898D4E31759FB047AE22A1DC0AB765C8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C28517CF1749DF981B83A9F1D8542FF5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8AC90AA4994A6B17D0C52A0BA584FE07</key>
+		<dict>
+			<key>fileRef</key>
+			<string>108AA2994D7815017CD629C1646FFF61</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8FF043AAC98C1A6E138015CCEBD23167</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C582D8E9B3BE010F0752419457FE8121</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-JeopardyScorer/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.4</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_JeopardyScorer</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>91059726DC94563BC9E3159625138DBE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>AutoTextView.swift</string>
+			<key>path</key>
+			<string>Spring/AutoTextView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>98195BE3AE0229D66A4925FEB3E88AD0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C96B6E188B9C19B02F7A48882B460FF1</string>
+				<string>644DF8F1DD47151F078FE505B9287BE4</string>
+				<string>91059726DC94563BC9E3159625138DBE</string>
+				<string>37F3D3BA73F633688D4B0A041AFDFEFF</string>
+				<string>E5A10C62583F50B571B0FEE47047D3D8</string>
+				<string>7B639C1CF665CE74FBD6494B9A6633AC</string>
+				<string>714B835B557B3F72D89945095C23B1A4</string>
+				<string>243BD3D3C3D5BDAF745916587420D963</string>
+				<string>747EC9F42A32387A595E40BE8E658168</string>
+				<string>C28517CF1749DF981B83A9F1D8542FF5</string>
+				<string>17786A103C8CD0AAB191C5A9353EBBFC</string>
+				<string>E6F2691BBD99CF1196A45A047DB048B5</string>
+				<string>50AB8DC0029F616AC6A34A74FDAFD750</string>
+				<string>4DF1373004EE5CF38BDD54B6746887D0</string>
+				<string>108AA2994D7815017CD629C1646FFF61</string>
+				<string>21C0F51565A5346A442CC17CBFEE3FBD</string>
+				<string>60B11326E117F16B77C4601D8FF6FC0B</string>
+				<string>9F9876D10625C1E9006562055D3BF119</string>
+				<string>3F9CC2BB93470648CCEE42F06CF16EF1</string>
+				<string>017820BFEFFA04C8392724C5BE0810A8</string>
+				<string>2834662A3665BDF7D2F61BA3631A66AD</string>
+				<string>B47A46C4CDA26763F8A89977615BA750</string>
+				<string>73DD0FB30CDB217927C27FE7D04F75EE</string>
+				<string>DAB550BFBDE25FD73B2CAF77A9F8FBBD</string>
+				<string>83D313E70FABD3B63D31116FC62DDD68</string>
+				<string>9E4A04412784B2B3A8735C7186E1AE16</string>
+				<string>FE0B4A3C8430E8D9BAC52FE90BB00CF2</string>
+				<string>1921EF05F19853DACB4C9A0618694647</string>
+				<string>1AC31D153712963296C384E7A8F76E0D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Spring</string>
+			<key>path</key>
+			<string>Spring</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>98DC239BCE4043C788B606F584C2E747</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DDF575AD6B47BCAFEB4BE7BF8B8F498D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9A0AF41A2268A015F5B278FCFD19E675</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3F230ED8239B6B2345C92F2BE428604A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9B4B13AE575312BB4131EF69E1E00C7F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>749F5107943EE86EB0F864D52FAEEBCE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9CEEFDBD53837098C26AA66167B9A34F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>BEA25D6D2CA51C2686F6285C6BD54E27</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9A0AF41A2268A015F5B278FCFD19E675</string>
+				<string>AF316655767807C967F03407C7C6AFDA</string>
+				<string>9B4B13AE575312BB4131EF69E1E00C7F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>402A71694EFE804A26B2D31F5EFDDB31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-JeopardyScorer</string>
+			<key>productName</key>
+			<string>Pods-JeopardyScorer</string>
+			<key>productReference</key>
+			<string>C985EE6100A34563C4942039E4BD88B7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>9E4A04412784B2B3A8735C7186E1AE16</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>TransitionZoom.swift</string>
+			<key>path</key>
+			<string>Spring/TransitionZoom.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F9876D10625C1E9006562055D3BF119</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SpringAnimation.swift</string>
+			<key>path</key>
+			<string>Spring/SpringAnimation.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A493E22E7771C06144D1E8C1E4F075C1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C6C34670B6E57C3D16247C893226E158</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AA05AF9C3A14EE0E32F42C6E6D42D34F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.4</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AF316655767807C967F03407C7C6AFDA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FDE85B1FFDFB97C0E7B7FF8568517CE3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AFC0905E8B9FD7BD96E3305BEC6A408F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9F9876D10625C1E9006562055D3BF119</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B1526F737F8754B9637038A81C19492A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>017820BFEFFA04C8392724C5BE0810A8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3006549161976151BA776A6BD4F81F8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C55DE6BD2C60A6FC893D8DB339FC4553</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B37AD3E2F87A47B9EB5F0D023F33FF1D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>83D313E70FABD3B63D31116FC62DDD68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B47A46C4CDA26763F8A89977615BA750</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SpringTextField.swift</string>
+			<key>path</key>
+			<string>Spring/SpringTextField.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B5733524751399DED1A701C15EF79176</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2834662A3665BDF7D2F61BA3631A66AD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BA7956F2792C1B62882F7A0B02BFC5FB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>276887C3869F383DA42BC7A4D2DBEF3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>53F661C0CA7190D2CF05023FB33D61E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEA25D6D2CA51C2686F6285C6BD54E27</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FAADDCF575F344327B675AFBDBADEC1B</string>
+				<string>8FF043AAC98C1A6E138015CCEBD23167</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C0D2C01A6C49699CFCDF22D7AEFE93AF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4DF1373004EE5CF38BDD54B6746887D0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C13D062786D3DA29734AE9C30D43F3E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C28517CF1749DF981B83A9F1D8542FF5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DesignableTextView.swift</string>
+			<key>path</key>
+			<string>Spring/DesignableTextView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4B97141655CF0A8CA16429E549F0D1E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C55DE6BD2C60A6FC893D8DB339FC4553</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>LoadingView.xib</string>
+			<key>path</key>
+			<string>Spring/LoadingView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C582D8E9B3BE010F0752419457FE8121</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6C34670B6E57C3D16247C893226E158</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0B55D2ABBCEE533CB779FDB736828A9B</string>
+				<string>713C308BF15B48C7E01ECB8595266CFD</string>
+				<string>3CCCBE0BE52DCC0FF92603D1F6A322B5</string>
+				<string>C13D062786D3DA29734AE9C30D43F3E8</string>
+				<string>432B0722C67B0D7DB1D6E5C53BB963BF</string>
+				<string>C4B97141655CF0A8CA16429E549F0D1E</string>
+				<string>D382D9E1AA6E4B26E05D7E4A8E87C509</string>
+				<string>E4A0AC602C40EB73C98A8B13C15FF1D7</string>
+				<string>62621F07A67B010C0A57E78583E35917</string>
+				<string>C582D8E9B3BE010F0752419457FE8121</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-JeopardyScorer</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-JeopardyScorer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C96B6E188B9C19B02F7A48882B460FF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>AsyncButton.swift</string>
+			<key>path</key>
+			<string>Spring/AsyncButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C985EE6100A34563C4942039E4BD88B7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_JeopardyScorer.framework</string>
+			<key>path</key>
+			<string>Pods_JeopardyScorer.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CCA510CFBEA2D207524CDA0D73C3B561</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C985EE6100A34563C4942039E4BD88B7</string>
+				<string>451746300E823F97EB2F05F955A14B46</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CEA7DA76414B19CD1DF071D5250CA67E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>50AB8DC0029F616AC6A34A74FDAFD750</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D382D9E1AA6E4B26E05D7E4A8E87C509</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>9CEEFDBD53837098C26AA66167B9A34F</string>
+				<string>4ADDC830F1F3957A877DC0A28F0CBD4E</string>
+			</array>
+		</dict>
+		<key>D9098E669199273B2BD82EB82BE303A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C96B6E188B9C19B02F7A48882B460FF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA8ABA13298C7710C0415705CF15A95F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F5FA4219C27344F5A01D3CDD86C3EAB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAB550BFBDE25FD73B2CAF77A9F8FBBD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SpringView.swift</string>
+			<key>path</key>
+			<string>Spring/SpringView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAF6A47E3B034D70B6167D87F109E2D3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Spring-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DDF575AD6B47BCAFEB4BE7BF8B8F498D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4ACF5E472382B95FBDED0550E24C18DB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E445E02BAE699D3CD97213973DCDC5FE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E4A04412784B2B3A8735C7186E1AE16</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E4A0AC602C40EB73C98A8B13C15FF1D7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-JeopardyScorer-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5A10C62583F50B571B0FEE47047D3D8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DesignableButton.swift</string>
+			<key>path</key>
+			<string>Spring/DesignableButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6D355B8760661369050BD92BA9CBC5E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FE0B4A3C8430E8D9BAC52FE90BB00CF2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E6F2691BBD99CF1196A45A047DB048B5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ImageLoader.swift</string>
+			<key>path</key>
+			<string>Spring/ImageLoader.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9D54407268E0C066760E9A3A283F8FC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>73DD0FB30CDB217927C27FE7D04F75EE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EA99C5E65D55AA9CEF09E17D00546D5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E6F2691BBD99CF1196A45A047DB048B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F25A1F5BF7035884B330E4CED131AD64</key>
+		<dict>
+			<key>fileRef</key>
+			<string>37F3D3BA73F633688D4B0A041AFDFEFF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F6B8408D5CBE56BBC1C0DC03998D76CB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D9098E669199273B2BD82EB82BE303A6</string>
+				<string>084A26CC6355487E7392E536B44D91A7</string>
+				<string>281ACA5F324A1A67F397E55FC273EDD0</string>
+				<string>F25A1F5BF7035884B330E4CED131AD64</string>
+				<string>78054845576BD105C4505ACCB26C9A77</string>
+				<string>860E6166BDD6C7A2AF796EE6D7729971</string>
+				<string>3B15962FE6CDF703F7517DBAF87AD6E4</string>
+				<string>6898D00A17F0B59B9FB7D020642B0FE7</string>
+				<string>7480D7F88F7D6C491AC709D6A2485553</string>
+				<string>898D4E31759FB047AE22A1DC0AB765C8</string>
+				<string>27156FA2EE58423E96F91E849944DE33</string>
+				<string>EA99C5E65D55AA9CEF09E17D00546D5F</string>
+				<string>CEA7DA76414B19CD1DF071D5250CA67E</string>
+				<string>C0D2C01A6C49699CFCDF22D7AEFE93AF</string>
+				<string>8AC90AA4994A6B17D0C52A0BA584FE07</string>
+				<string>FDD11A163E0E272D38230B50C4202AEE</string>
+				<string>DA8ABA13298C7710C0415705CF15A95F</string>
+				<string>858ED576E4AADE88999137E0AA25F219</string>
+				<string>AFC0905E8B9FD7BD96E3305BEC6A408F</string>
+				<string>4AC63369F44D2E1FF5754F4817036BE9</string>
+				<string>B1526F737F8754B9637038A81C19492A</string>
+				<string>B5733524751399DED1A701C15EF79176</string>
+				<string>4AEC16254AB33CD52714CBF96CB8A50D</string>
+				<string>E9D54407268E0C066760E9A3A283F8FC</string>
+				<string>0C926B1D844554EFAF143C26682CB608</string>
+				<string>B37AD3E2F87A47B9EB5F0D023F33FF1D</string>
+				<string>E445E02BAE699D3CD97213973DCDC5FE</string>
+				<string>E6D355B8760661369050BD92BA9CBC5E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FAADDCF575F344327B675AFBDBADEC1B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>62621F07A67B010C0A57E78583E35917</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-JeopardyScorer/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.4</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-JeopardyScorer/Pods-JeopardyScorer.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_JeopardyScorer</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FB15F19ED9C1E6AF23DABA462D9E3D0D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>FDD11A163E0E272D38230B50C4202AEE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>21C0F51565A5346A442CC17CBFEE3FBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDE85B1FFDFB97C0E7B7FF8568517CE3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FB15F19ED9C1E6AF23DABA462D9E3D0D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FE0B4A3C8430E8D9BAC52FE90BB00CF2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>UnwindSegue.swift</string>
+			<key>path</key>
+			<string>Spring/UnwindSegue.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

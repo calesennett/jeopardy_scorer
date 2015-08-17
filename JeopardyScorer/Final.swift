@@ -24,9 +24,9 @@ class Final: UIViewController {
     }
     
     @IBAction func playAgainButtonDidPress(sender: UIButton) {
-        springWithCompletion(0.4, {
+        springWithCompletion(0.4, animations: {
             self.playAgainButton.transform = CGAffineTransformMakeTranslation(0, 400)
-        }, { finished in
+        }, completion: { finished in
             self.resetGame()
             self.performSegueWithIdentifier("finalScreenToQuestion", sender: self)
         })

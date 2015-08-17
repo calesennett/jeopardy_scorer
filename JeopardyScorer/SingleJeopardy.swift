@@ -21,6 +21,9 @@ class SingleJeopardy: UIViewController {
     @IBOutlet weak var wagerUIView: UIView!
     @IBOutlet weak var wagerTextField: UITextField!
     @IBOutlet weak var finalJeopardyButton: UIButton!
+    @IBOutlet var optionButtons: [UIButton]!
+    @IBOutlet weak var dailyDoubleCorrectButton: UIButton!
+    @IBOutlet weak var dailyDoubleIncorrectButton: UIButton!
     
     let defaults = NSUserDefaults.standardUserDefaults()
     let TOTAL_KEY = "total"
@@ -31,6 +34,7 @@ class SingleJeopardy: UIViewController {
         super.viewDidLoad()
         setTotalLabel()
         hideAnswerButtons()
+        hideDailyDoubleButtons()
         hideWagerView()
         drawTextFieldBorderBottom()
         updateQuestionAmounts()
@@ -41,21 +45,22 @@ class SingleJeopardy: UIViewController {
     }
     
     @IBAction func dailyDoubleButtonDidPress(sender: UIButton) {
-        springWithCompletion(0.4, {
+        springWithCompletion(0.4, animations: {
             self.wagerUIView.transform = CGAffineTransformMakeTranslation(0, 0)
             self.singleJeopardyUIView.bringSubviewToFront(self.wagerUIView)
-        }, { finished in
+        }, completion: { finished in
             self.performSegueWithIdentifier("questionToDailyDouble", sender: self)
         })
     }
     
     @IBAction func finalJeopardyButtonDidPress(sender: UIButton) {
-        springWithCompletion(0.4, {
+        springWithCompletion(0.4, animations: {
+            self.hideOptionButtons()
             self.wagerUIView.transform = CGAffineTransformMakeTranslation(0, 0)
             self.singleJeopardyUIView.bringSubviewToFront(self.wagerUIView)
-            }, { finished in
-                self.defaults.setBool(true, forKey: self.FINAL_JEOPARDY_ENABLED_KEY)
-                self.performSegueWithIdentifier("questionToDailyDouble", sender: self)
+        }, completion: { finished in
+            self.defaults.setBool(true, forKey: self.FINAL_JEOPARDY_ENABLED_KEY)
+            self.performSegueWithIdentifier("questionToDailyDouble", sender: self)
         })
     }
     
@@ -74,22 +79,37 @@ class SingleJeopardy: UIViewController {
         }
     }
     
+    private func hideDailyDoubleButtons() {
+        dailyDoubleCorrectButton.transform = CGAffineTransformMakeTranslation(0, 300)
+        dailyDoubleIncorrectButton.transform = CGAffineTransformMakeTranslation(0, 300)
+    }
+    
     private func hideWagerView() {
-        wagerUIView.transform = CGAffineTransformMakeTranslation(500, 0)
+        wagerUIView.transform = CGAffineTransformMakeTranslation(400, 0)
+    }
+    
+    private func hideOptionButtons() {
+        var delay = 0.05
+        for btn in optionButtons {
+            springWithDelay(0.4, delay: delay, animations: {
+                btn.transform = CGAffineTransformMakeTranslation(200, 0)
+                delay += 0.05
+            })
+        }
     }
     
     private func updateQuestionAmounts() {
         if defaults.boolForKey(DOUBLE_JEOPARDY_ENABLED_KEY) == false {
-            var amount = 200
+            let amount = 200
             
-            for (idx, btn) in enumerate(questionAmountButtons) {
+            for (idx, btn) in questionAmountButtons.enumerate() {
                 let questionAmount = amount * (idx + 1)
                 btn.setTitle("$\(questionAmount)", forState: UIControlState.Normal)
             }
         } else {
-            var amount = 400
+            let amount = 400
             
-            for (idx, btn) in enumerate(questionAmountButtons) {
+            for (idx, btn) in questionAmountButtons.enumerate() {
                 let questionAmount = amount * (idx + 1)
                 btn.setTitle("$\(questionAmount)", forState: UIControlState.Normal)
             }
@@ -97,7 +117,7 @@ class SingleJeopardy: UIViewController {
     }
     
     private func drawTextFieldBorderBottom() {
-        var bottomLine = CALayer()
+        let bottomLine = CALayer()
         bottomLine.frame = CGRectMake(0.0, wagerTextField.frame.height - 3, wagerTextField.frame.width, 10.0)
         bottomLine.backgroundColor = UIColor.whiteColor().CGColor
         wagerTextField.borderStyle = UITextBorderStyle.None
@@ -119,17 +139,17 @@ class SingleJeopardy: UIViewController {
     }
     
     private func unhideAnswerButtons() {
-        springWithDelay(0.4, 0.05, {
+        springWithDelay(0.4, delay: 0.05, animations: {
             self.correctButton.transform = CGAffineTransformMakeTranslation(0, 0)
             self.singleJeopardyUIView.bringSubviewToFront(self.correctButton)
             
         })
-        springWithDelay(0.4, 0.10, {
+        springWithDelay(0.4, delay: 0.10, animations: {
             self.incorrectButton.transform = CGAffineTransformMakeTranslation(0, 0)
             self.singleJeopardyUIView.bringSubviewToFront(self.incorrectButton)
             
         })
-        springWithDelay(0.4, 0.15, {
+        springWithDelay(0.4, delay: 0.15, animations: {
             self.didNotAnswerButton.transform = CGAffineTransformMakeTranslation(0, 0)
             self.singleJeopardyUIView.bringSubviewToFront(self.didNotAnswerButton)
             
@@ -137,14 +157,14 @@ class SingleJeopardy: UIViewController {
     }
     
     private func animateButton(button: UIButton) {
-        springWithCompletion(0.4, {
+        springWithCompletion(0.4, animations: {
             button.frame.origin = CGPointMake(0, 183)
             button.titleEdgeInsets = UIEdgeInsetsMake(-280, 0, 0, 0)
             button.frame = CGRectMake(0, 183, 380, 485)
             self.singleJeopardyUIView.bringSubviewToFront(button)
             self.unhideAnswerButtons()
             
-            }, { finished in
+            }, completion: { finished in
                 self.performSegueWithIdentifier("questionToAnswer", sender: button)
             })
     }
